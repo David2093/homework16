@@ -1,0 +1,69 @@
+.bg-box {
+    margin: 0;
+    padding: 0;
+    background-color: green;
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.center-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.center-image img {
+    width: 600px;
+    height: auto;
+    border: 5px solid green;
+}
+
+/* Рамки */
+.border {
+    position: absolute;
+    display: flex;
+    gap: 2px;
+}
+
+.border.top {
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 500px;
+    justify-content: center;
+    background-image: url('./images/lamp.png');
+    background-repeat: repeat-x;
+    background-size: 60px 80px;
+}
+
+.border.bottom {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 400px;
+    background-image: url('./images/green.png');
+    background-repeat: repeat-x;
+    background-size: contain;
+}
+
+.border.left {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    background-image: url('./images/3f3f.webp');
+    background-repeat: repeat-y;
+    background-size: 35px 35px;
+}
+
+.border.right {
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 50px;
+    background-image: url('./images/donut.webp');
+    background-repeat: repeat-y;
+    background-size: 40px 40px;
+}
